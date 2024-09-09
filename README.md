@@ -37,12 +37,12 @@ We extracted Protein-Nucleic acid complex data from the [NAKB](https://www.nakb.
   - `run_training.sh`: Script to run the `main.py` file in background using `nohup`
 
 ### Misc:
-  -  `checkpoints/` directory (user needs to create this): Model checkpoints will be saved here by default
-  -  `runs/` directory (user needs to create this): Tensorboard logs saved will be saved here by default
+  -  `checkpoints/` directory (user needs to create this): Model checkpoints will be saved here by default.
+  -  `runs/` directory (user needs to create this): Tensorboard logs saved will be saved here by default.
   -  `logs/` directory (user needs to create this): `stdout` and `stderr` files for any run will be merged and saved here.
-  - `dna_protein_dataset.pkl`: Our processed DNA-Protein complex dataset, available at [this link]((https://drive.google.com/file/d/1nHrB8WiYuLdJpiP-L3lls9cKp0ipWXi1/view?usp=sharing)) (User should create a `data` directory and store this file there)
-  - `train_test_clusters.pkl`: Train test split indices based on DNA sequence-similarity based clustering (using `mmseq2`), available at [this link](https://drive.google.com/file/d/1HfgtehZQu8a9ye2DYdufi3wrhJS9FOwd/view?usp=sharing) ((User should create a `data` directory and store this file there))
-
+  - `data/dna_protein_dataset.pkl`: Our processed DNA-Protein complex dataset, available at [this link]((https://drive.google.com/file/d/1nHrB8WiYuLdJpiP-L3lls9cKp0ipWXi1/view?usp=sharing)). 
+  - `data/train_test_clusters.pkl`: Train test split indices based on DNA sequence-similarity based clustering (using `mmseq2`) .
+  - `data/AF3_pdbs.txt`: Subset of AlphaFold3 test set which we used for our baseline comparison. 
 
 
 ## Usage
