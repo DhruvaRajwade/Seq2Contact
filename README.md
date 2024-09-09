@@ -12,14 +12,9 @@ Create an environment (users will be prompted to select `Conda` or `Virtualenv` 
 
 ## Datasets
 
-We extracted Protein-Nucleic acid complex data from the [NAKB](https://www.nakb.org/) database. Our processed dataset (pickle) can be found in the `data/` directory. We provide a helper Jupyter notebook (`notebooks/read_and_save_data.ipynb`)to create your own dataset and process it to be compatible with our pipeline. 
+We extracted Protein-Nucleic acid complex data from the [NAKB](https://www.nakb.org/) database. Our processed dataset (pickle) can be downloaded [here](https://drive.google.com/file/d/1nHrB8WiYuLdJpiP-L3lls9cKp0ipWXi1/view?usp=sharing). We provide a helper Jupyter notebook (`notebooks/read_and_save_data.ipynb`)to create your own dataset and process it to be compatible with our pipeline. 
 
 ## Files
-
-
-### ├── data/
-- `dna_protein_dataset.pkl`: Our processed DNA-Protein complex dataset
-- `train_test_clusters.pkl`: Train test split indices based on DNA sequence-similarity based clustering (using `mmseq2`)
 
 ### ├── notebooks/
 - `af3_read.ipynb`: Notebook for reading and analyzing AlphaFold 3 data.
@@ -42,9 +37,11 @@ We extracted Protein-Nucleic acid complex data from the [NAKB](https://www.nakb.
   - `run_training.sh`: Script to run the `main.py` file in background using `nohup`
 
 ### Misc:
-  -  `checkpoints/` directory: Model checkpoints will be saved here by default
-  -  `runs/` directory: Tensorboard logs saved will be saved here by default
-  -  `logs/` directory: `stdout` and `stderr` files for any run will be merged and saved here.
+  -  `checkpoints/` directory (user needs to create this): Model checkpoints will be saved here by default
+  -  `runs/` directory (user needs to create this): Tensorboard logs saved will be saved here by default
+  -  `logs/` directory (user needs to create this): `stdout` and `stderr` files for any run will be merged and saved here.
+  - `dna_protein_dataset.pkl`: Our processed DNA-Protein complex dataset, available at [this link]((https://drive.google.com/file/d/1nHrB8WiYuLdJpiP-L3lls9cKp0ipWXi1/view?usp=sharing)) (User should create a `data` directory and store this file there)
+  - `train_test_clusters.pkl`: Train test split indices based on DNA sequence-similarity based clustering (using `mmseq2`), available at [this link](https://drive.google.com/file/d/1HfgtehZQu8a9ye2DYdufi3wrhJS9FOwd/view?usp=sharing) ((User should create a `data` directory and store this file there))
 
 
 
