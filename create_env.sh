@@ -27,7 +27,7 @@ read -p "Enter the environment name: " env_name
 # Create and activate Conda environment
 if [ "$env_choice" == "1" ] || [ "$env_choice" == "conda" ]; then
     conda create --name "$env_name" python=3.10.12 -y
-    source activate "$env_name"
+    conda activate "$env_name"
 
 # Create and activate Virtualenv environment
 elif [ "$env_choice" == "2" ] || [ "$env_choice" == "virtualenv" ]; then
