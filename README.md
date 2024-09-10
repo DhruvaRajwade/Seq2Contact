@@ -51,11 +51,11 @@ We extracted Protein-Nucleic acid complex data from the [NAKB](https://www.nakb.
 
 To train a model using default hyperparameters and save checkpoints, tensorboard logs and evaluate, use: (Note: The CUBLAS part is for reproducibility)
 
-`CUBLAS_WORKSPACE_CONFIG=:4096:8 python3 -u main_train.py --log_suffix 'my_suffix' --data_mode 'dna' --lr 0.00001 --split_mode 'sequence_similarity' --finetune_protein_model --finetune_na_model --num_epochs 1000  --save_freq 300 --seed 42 --na_upper_threshold 200 --protein_upper_threshold 1000 --train_ratio 0.8 --train_batch_size 8 --eval_batch_size 8 --dna_num_layers_to_unfreeze 1 --protein_num_layers_to_unfreeze 1`
+`CUBLAS_WORKSPACE_CONFIG=:4096:8 python3 -u main_train.py --log_suffix 'my_suffix'  --lr 0.00001 --num_epochs 1000 --train_batch_size 8 --eval_batch_size 8 --finetune_protein_model --finetune_na_model --dna_num_layers_to_unfreeze 1 --protein_num_layers_to_unfreeze 1`
 
 To train a model in the background using `nohup`, set your environment path in the `run_training.sh` file, verify the argparse agruments you want for the run and use:
 
-`nohup ./run_nohup.sh > logs/my_suffix.out 2>&1 & `
+`nohup ./run_training.sh > logs/my_suffix.out 2>&1 & `
 
 
 
