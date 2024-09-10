@@ -31,7 +31,7 @@ if [ "$env_choice" == "1" ] || [ "$env_choice" == "conda" ]; then
 
 # Create and activate Virtualenv environment
 elif [ "$env_choice" == "2" ] || [ "$env_choice" == "virtualenv" ]; then
-    python3 -m pip install --user virtualenv
+    python3 -m pip install virtualenv
     python3 -m virtualenv "$env_name"
     source "$env_name/bin/activate"
 else
