@@ -12,7 +12,7 @@ Create an environment (users will be prompted to select `Conda` or `Virtualenv` 
 
 ## Datasets
 
-We extracted Protein-Nucleic acid complex data from the [NAKB](https://www.nakb.org/) database. Our processed dataset (pickle) can be downloaded [here](https://drive.google.com/file/d/1nHrB8WiYuLdJpiP-L3lls9cKp0ipWXi1/view?usp=sharing). We provide a helper Jupyter notebook (`notebooks/read_and_save_data.ipynb`)to create your own dataset and process it to be compatible with our pipeline. 
+We extracted Protein-Nucleic acid complex data from the [NAKB](https://www.nakb.org/) database. Our processed dataset (pickle) can be downloaded [here](https://drive.google.com/file/d/1nHrB8WiYuLdJpiP-L3lls9cKp0ipWXi1/view?usp=sharing). We provide a helper Jupyter notebook [(`notebooks/read_and_save_data.ipynb`)](notebooks/read_and_save_data.ipynb) to create your own dataset and process it to be compatible with our pipeline. 
 
 ## Files
 
