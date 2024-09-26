@@ -1,4 +1,4 @@
-# Understanding Protein-DNA Interactions by Paying Attention to Genomic Foundation Models -- Code
+# Understanding Protein-DNA Interactions by Paying Attention to Protein and Genomics Foundation Models -- Code
 
 This is the code corresponding to the experiments conducted for the work "Understanding Protein-DNA Interactions by Paying Attention to Genomic Foundation Models" where we use the ESM2 and GPN foundation models coupled with a Cross-Attention module to learn Protein-DNA contacts at single amino acid and single nucleotide resolution. 
 
