@@ -72,3 +72,14 @@ Relevant Hyperparameters for setting up training:
  - `dna_num_layers_to_unfreeze` : These many last layers of the DNA model will be kept trainable
  - `log_suffix`: This will be appended to the path of your model's checkpoints and runs 
 
+### Citation
+Please consider citing our work using the following bibtex entry,
+```bibtex
+@inproceedings{seq2contact,
+  title     = {Understanding Protein-DNA Interactions by Paying Attention to Protein and Genomics Foundation Models},
+  author    = {Rajwade, Dhruva and Wang, Erica, and Satpathy, Aryan and Brace, Alexander and Guo, Hongyu and Ramanathan, Arvind and Liu, Shengchao and Anandkumar, Anima},
+  booktitle = {Foundation Models for Science Workshop, NeurIPS},
+  year      = {2024},
+  url       = {https://openreview.net/pdf?id=NifnqNdpaf}
+}
+```
